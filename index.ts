@@ -31,6 +31,15 @@ const AI_MODELS: Record<
     maxTokens: 128000,
     llm: ["OpenAI Chat (Langchain)"],
   },
+  "gpt-4-0125-preview": {
+    encoding: "cl100k_base",
+    prices: {
+      prompt: 0.01,
+      completion: 0.03,
+    },
+    maxTokens: 128000,
+    llm: ["OpenAI Chat (Langchain)"],
+  },
   "gpt-4-1106-preview": {
     encoding: "cl100k_base",
     prices: {
