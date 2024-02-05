@@ -1,6 +1,6 @@
 import type { LLMProviderType } from "../types";
 
-export const AI_MODELS: Record<
+const AI_MODELS: Record<
   string,
   {
     encoding: string;
@@ -338,3 +338,5 @@ export const AI_MODELS: Record<
     // order: -1
   },
 };
+
+export default AI_MODELS;
