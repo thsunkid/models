@@ -301,13 +301,25 @@ const AI_MODELS: Record<
     order: -1,
   },
 
+
+  "gemini-1.5-flash": {
+    encoding: "r50k_base",
+    prices: {
+      prompt: 0.0070,
+      completion: 0.0105,
+    },
+    maxTokens: 128000,
+    llm: ["Google GenerativeAI (Langchain)"],
+    order: -1,
+  },
+
   "gemini-1.5-pro": {
     encoding: "r50k_base",
     prices: {
-      prompt: 0,
-      completion: 0,
+      prompt: 0.0070,
+      completion: 0.0105,
     },
-    maxTokens: 2048,
+    maxTokens: 128000,
     llm: ["Google GenerativeAI (Langchain)"],
     order: -1,
   },
