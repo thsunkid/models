@@ -13,6 +13,51 @@ const AI_MODELS: Record<
     order?: number;
   }
 > = {
+  "claude-3-haiku-20240307": {
+    encoding: "cl100k_base",
+    prices: {
+      prompt: 0.00025,
+      completion: 0.00125,
+    },
+    maxTokens: 200000,
+    llm: ["Proxy Anthropic"],
+  },
+  "claude-3-5-sonnet-20240620": {
+    encoding: "cl100k_base",
+    prices: {
+      prompt: 0.003,
+      completion: 0.015,
+    },
+    maxTokens: 200000,
+    llm: ["Proxy Anthropic"],
+  },
+  "claude-3-5-sonnet-20241022": {
+    encoding: "cl100k_base",
+    prices: {
+      prompt: 0.003,
+      completion: 0.015,
+    },
+    maxTokens: 200000,
+    llm: ["Proxy Anthropic"],
+  },
+  "o1-preview": {
+    encoding: "cl100k_base",
+    prices: {
+      prompt: 0.005,
+      completion: 0.005,
+    },
+    maxTokens: 128000,
+    llm: ["OpenAI Chat (Langchain)"],
+  },
+  "o1-mini": {
+    encoding: "cl100k_base",
+    prices: {
+      prompt: 0.005,
+      completion: 0.005,
+    },
+    maxTokens: 128000,
+    llm: ["OpenAI Chat (Langchain)"],
+  },
   "gpt-4o": {
     encoding: "cl100k_base",
     prices: {
@@ -300,12 +345,10 @@ const AI_MODELS: Record<
     llm: ["OpenAI Instruct (Langchain)"],
     order: -1,
   },
-
-
   "gemini-1.5-flash": {
     encoding: "r50k_base",
     prices: {
-      prompt: 0.0070,
+      prompt: 0.007,
       completion: 0.0105,
     },
     maxTokens: 128000,
@@ -316,7 +359,7 @@ const AI_MODELS: Record<
   "gemini-1.5-pro": {
     encoding: "r50k_base",
     prices: {
-      prompt: 0.0070,
+      prompt: 0.007,
       completion: 0.0105,
     },
     maxTokens: 128000,
